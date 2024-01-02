@@ -1,5 +1,6 @@
 // import { addProductToBasket } from "./main";
 import { Products } from "./models/products";
+import { addProduct } from "./main";
 
 
 export function updateModalContent(product: Products) {
@@ -46,12 +47,12 @@ export function updateModalContent(product: Products) {
     addBtn.innerHTML = '<i class="bi bi-cart-plus"></i> Add Product';
     addBtn.className = "modal-card__button";
     modal?.appendChild(addBtn);
-    addBtn.addEventListener("click", () => {
-       
-      console.log("..");
-    });
-  
+
+   
+
+   
     modalCloseBtn.addEventListener("click", () => {
       modal?.classList.add("modalHidden");
     });
   }
+  

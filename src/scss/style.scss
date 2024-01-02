@@ -281,6 +281,9 @@ main {
     width: 45%;
     overflow: hidden;
     height: 250px;
+    @include tablet{
+      width: 25%;
+    }
     &__button {
       background-color: $accent-sec;
       color: white;
