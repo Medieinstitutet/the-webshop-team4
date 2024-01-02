@@ -3,9 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Varukorg</title>
+    <script
+      src="https://kit.fontawesome.com/ee781b796e.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Produkter</title>
   </head>
   <body>
-    <script src="/src/ts/main.ts"></script>
+    <header>
+      <button>
+        <a href=""><i class="fas fa-shopping-bag"></i></a>
+      </button>
+      <h1 class="header__logoText"><a href="index.html">WebShop</a></h1>
+      <button class="hamburger">
+        <div class="bar"></div>
+      </button>
+    </header>
+    <section class="banner">
+      <div>
+        <i class="fas fa-shopping-cart"></i>
+        <p>Free delivery* and returns</p>
+        <i class="fas fa-exchange-alt"></i>
+        <p>We offer 60 days return policy</p>
+
+        <i class="fas fa-wallet"></i>
+        <p>Buy now. Pay in 30 days</p>
+      </div>
+    </section>
+    <section>
+    <nav class="hamburgerNav">
+      <ul class="mainHamUl">
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li><a href="#">Tables</a></li>
+        <li><a href="#">Chairs</a></li>
+        <li><a href="#">Couch</a></li>
+        <li><a href="#">Beds</a></li>
+        <li><a href="">Basket</a></li>
+        <li><a href="">Sign in/Sign Up</a></li>
+      </ul>
+    </nav>
+  </section>
+
+    <main>
+      <h1 class="h1-categories">Varukorg</h1>
+      <div id="app2"></div>
+      
+    </main>
+
+    <footer class="footer">
+      <section class="help">
+        <h3 class="help__title">Do you need help?</h3>
+        <a href="#">Contact us</a>
+      </section>
+      <section class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#" class="nav-list__link">About us </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-list__link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-list__link"
+              ><i class="bi bi-cart4"></i> Shopping Cart
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <ul class="contacts__list">
+          <li class="contacts__link">
+            <a href="./index.html" class="footer__logo">LOGO</a>
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+          <li class="contacts__item">
+            <a href="#" class="contacts__link"><i class="bi bi-youtube"></i></a>
+          </li>
+        </ul>
+      </section>
+    </footer>
+
+    <script type="module" src="/src/ts/main.ts"></script>
   </body>
 </html>

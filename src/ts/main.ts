@@ -58,6 +58,14 @@ const basketProductsArray: Products[] = [];
 // }
 
 const productsContainer = document.getElementById("app");
+const productsContainer2 = document.getElementById("app2");
+
+
+function saveBasketToLocalStorage() {
+  localStorage.setItem('basketProducts', JSON.stringify(basketProductsArray));
+}
+
+
 
 for (let i = 0; i < productsArray.length; i++) {
   const productCard = document.createElement("div");
@@ -91,7 +99,31 @@ for (let i = 0; i < productsArray.length; i++) {
     productsArray[i].quantity++;
     basketProductsArray.push(productsArray[i]);
     console.log(basketProductsArray);
+    saveBasketToLocalStorage(); // Save basket data to localStorage
   });
+  
 
   productsContainer?.appendChild(productCard);
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedBasket = localStorage.getItem('basketProducts');
+  if (savedBasket) {
+    basketProductsArray.push(...JSON.parse(savedBasket));
+  }
+  
+  // Render your product cards and basket content here
+  // ...
+
+
+for (let i = 0; i < basketProductsArray.length; i++) {
+  const paragraf = document.createElement("p");
+  paragraf.innerHTML = basketProductsArray[i].title;
+  productsContainer2?.appendChild(paragraf);
+  
+}
+
+});
