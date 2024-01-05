@@ -1,0 +1,35 @@
+@mixin box-sixing {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+//Breakpoints
+@mixin mini-tablet {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin btn-style {
+  background-color: $accent-sec;
+  color: white;
+  border: none;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}

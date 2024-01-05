@@ -3,10 +3,9 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sell it or buy it?</title>
   <script src="https://kit.fontawesome.com/ee781b796e.js" crossorigin="anonymous"></script>
+  <title>Product information</title>
 </head>
 
 <body>
@@ -15,7 +14,6 @@
       <p class="noticeOnCart" id="noticeOnCart">0</p>
       <a href="basket.html"><i class="fas fa-shopping-bag"></i></a>
     </button>
-
     <h1 class="header__logoText"><a href="index.html">Nebula Nux</a></h1>
     <button class="hamburger">
       <div class="bar"></div>
@@ -40,7 +38,7 @@
         </li>
         <li><a href="#">Tables</a></li>
         <li><a href="#">Chairs</a></li>
-        <li><a href="#">Sofas</a></li>
+        <li><a href="#">Couch</a></li>
         <li><a href="#">Beds</a></li>
         <li><a href="basket.html">Basket</a></li>
         <li><a href="">Sign in/Sign Up</a></li>
@@ -48,19 +46,11 @@
     </nav>
   </section>
 
-  <main>
-    <section class="image-section hero"></section>
-    <section class="categories">
-      <h1 class="h1-categories">Shop by Categories</h1>
-      <ul class="ul-categories">
-        <li class="li-categories"><a href="#">News</a></li>
-        <li class="li-categories"><a href="products.html">Furniture</a></li>
-        <li class="li-categories"><a href="#">Chairs</a></li>
-        <li class="li-categories"><a href="#">Beds</a></li>
-        <li class="li-categories"><a href="#">Couch</a></li>
-        <li class="li-categories"><a href="#">Tables</a></li>
-      </ul>
-    </section>
+  <main class="marginmain">
+    <h1 class="h1-categories">Furniture</h1>
+    <div id="app"></div>
+    <aside id="content-information" class="modal modalHidden">
+    </aside>
   </main>
 
   <footer class="footer">
@@ -74,10 +64,10 @@
           <a href="#" class="nav-list__link">About us </a>
         </li>
         <li class="nav-item">
-          <a href="products.html" class="nav-list__link">Products</a>
+          <a href="./products.html" class="nav-list__link">Products</a>
         </li>
         <li class="nav-item">
-          <a href="basket.html" class="nav-list__link"><i class="bi bi-cart4"></i> Basket
+          <a href="./basket.html" class="nav-list__link"><i class="bi bi-cart4"></i> Basket
           </a>
         </li>
       </ul>
